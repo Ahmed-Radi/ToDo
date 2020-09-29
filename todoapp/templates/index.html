@@ -6,6 +6,10 @@
         <title>ToDo App</title>
     </head>
     <body>
+        <form method="post" action="/todos/create"> <!--todos is a table-->
+            <input type="text" name="description" id="">
+            <input type="submit" value="Create">
+        </form>
         <ul>
             {% for d in data%}
                 <li>{{d.description}}</li>
